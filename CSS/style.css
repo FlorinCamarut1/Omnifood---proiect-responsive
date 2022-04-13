@@ -32,7 +32,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -71,6 +71,7 @@ body {
   text-decoration: none;
   /* faci tranzitie intre backround color sa para mai profesionist,nu e instant ci setezi tu timpul */
   transition: background-color 0.3s;
+  font-weight: 600;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -101,4 +102,31 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
-/* test pentru upload github */
+.delivered-meals {
+  display: flex;
+  margin-top: 9rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+.delivered-img {
+  display: flex;
+}
+.delivered-img img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.delivered-img img:last-child {
+  margin-right: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e67e22;
+}
