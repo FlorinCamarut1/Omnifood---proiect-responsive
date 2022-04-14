@@ -1,158 +1,3 @@
-/* 
-----01 typography system :
-FONT SIZE SYSTEM(PX):10/12/14/16/18/20/24/30/336/44/52/62/74/86/98
--Font Weights:
-Default:400
-Medium:500
-Semi-bold:600
-Bold:700
-
--Line heights:
-Default: 1
-Small: 1.05
-Paragraph default:1.6
-
----02 Colors:
--Primary:#e67e22;
--Tints:#fdf2e9;
--Shades:#cf711f;
--Accents:
--Greys:#555;
-#333;
-
----03 Shadows:
-
----04 Border radius:
-defaul 9px
----05 WhiteSpace:
-SPACING SYSTEM (PX): 2/4/8/12/16/24/32/48/64/80/96/128.
-
-*/
-html {
-  /* procentajul pentru user browse */
-  font-size: 62.5%;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-/* grid reutilizabil adaugi doar la clasa care o vrei */
-/* CHESTII REUTILIZABILE */
-
-/* container cu marime si centrat clasa generala */
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-.grid--2cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid--3cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid--4cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.container {
-  /* 1140px -> conventional */
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-/******General reusable components*******/
-
-/******Hero-section*******/
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 4.8rem 0 9.6rem 0;
-}
-.hero {
-  max-width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-  align-items: center;
-  gap: 9.6rem;
-  padding: 0 3.2rem;
-}
-.heading-primary,
-.heading-secondary {
-  color: #333;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-}
-.subbheading {
-  display: inline-block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #cf711f;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-}
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
-.btn:link,
-.btn:visited {
-  background-color: #e67e22;
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  text-decoration: none;
-  /* faci tranzitie intre backround color sa para mai profesionist,nu e instant ci setezi tu timpul */
-  transition: background-color 0.3s;
-  font-weight: 600;
-}
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-  color: #fff;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: white;
-  color: #555;
-}
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-  color: #555;
-  /* truc ca sa facem border inauntru */
-  box-shadow: inset 0 0 0 3px white;
-}
-.hero-img {
-  width: 100%;
-}
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
 .delivered-meals {
   display: flex;
   margin-top: 9rem;
@@ -230,6 +75,21 @@ body {
 .section-how {
   padding: 9.6rem 0;
 }
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .step-img {
-  width: 50%;
+  width: 35%;
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
