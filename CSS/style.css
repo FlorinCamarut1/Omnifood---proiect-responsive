@@ -79,6 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .step-img {
   width: 35%;
@@ -92,4 +93,29 @@
 .step-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  z-index: -1;
+  width: 60%;
+  padding-bottom: 60%;
+  /* height: 60%;  NU MERGE ASA FOLOSIM PADDING*/
+
+  background-color: #fdf2e9;
+}
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
 }
