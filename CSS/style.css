@@ -1,4 +1,4 @@
-sa/* 
+/* 
 ----01 typography system :
 FONT SIZE SYSTEM(PX):10/12/14/16/18/20/24/30/336/44/52/62/74/86/98
 -Font Weights:
@@ -37,6 +37,32 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+/* grid reutilizabil adaugi doar la clasa care o vrei */
+/* CHESTII REUTILIZABILE */
+
+/* container cu marime si centrat clasa generala */
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  /* 1140px -> conventional */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -59,13 +85,28 @@ body {
   gap: 9.6rem;
   padding: 0 3.2rem;
 }
-.heading-primary {
+.heading-primary,
+.heading-secondary {
+  color: #333;
   font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+}
+.subbheading {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }
 .hero-description {
   font-size: 2rem;
@@ -183,4 +224,12 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/******How it works-section*******/
+.section-how {
+  padding: 9.6rem 0;
+}
+.step-img {
+  width: 50%;
 }
