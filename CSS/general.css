@@ -140,7 +140,7 @@ body {
   border-radius: 9px;
   text-decoration: none;
   /* faci tranzitie intre backround color sa para mai profesionist,nu e instant ci setezi tu timpul */
-  transition:background-color 0.3s;
+  transition: background-color 0.3s;
   font-weight: 600;
 }
 .btn--full:link,
