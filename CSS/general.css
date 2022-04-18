@@ -25,6 +25,7 @@ Medium:1.2
 
 ---04 Border radius:
 defaul 9px
+11px
 ---05 WhiteSpace:
 SPACING SYSTEM (PX): 2/4/8/12/16/24/32/48/64/80/96/128.
 
@@ -171,4 +172,7 @@ body {
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+strong {
+  font-weight: 500;
 }
