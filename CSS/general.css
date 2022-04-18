@@ -141,7 +141,7 @@ body {
   border-radius: 9px;
   text-decoration: none;
   /* faci tranzitie intre backround color sa para mai profesionist,nu e instant ci setezi tu timpul */
-  transition: background-color 0.3s;
+  transition: all 0.3s;
   font-weight: 600;
 }
 .btn--full:link,
@@ -170,8 +170,19 @@ body {
 .hero-img {
   width: 100%;
 }
+/* HELPER CLASES OR SETTINGS CLASSES */
+.center-text {
+  text-align: center;
+}
+.center-items {
+  display: flex;
+  justify-content: center;
+}
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }
 strong {
   font-weight: 500;
