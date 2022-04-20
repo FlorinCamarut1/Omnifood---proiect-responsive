@@ -16,12 +16,13 @@ Medium:1.2
 ---02 Colors:
 -Primary:#e67e22;
 -Tints:#fdf2e9;
--Shades:#cf711f;#fae5d3;
+-Shades:#cf711f;#fae5d3;#eb984e
 -Accents:
 -Greys:#555;#6f6f6f
 #333;
 
 ---03 Shadows:
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 ---04 Border radius:
 defaul 9px
@@ -72,7 +73,7 @@ html {
 .container {
   /* 1140px -> conventional */
   max-width: 120rem;
-  /* padding: 0 3.2rem; */
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
