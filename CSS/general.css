@@ -87,6 +87,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /******General reusable components*******/
 
@@ -217,6 +218,7 @@ body {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  line-height: 1.2;
 }
 /* HELPER CLASES OR SETTINGS CLASSES */
 .center-text {
