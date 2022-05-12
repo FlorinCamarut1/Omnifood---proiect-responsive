@@ -25,6 +25,7 @@ BtnNav.addEventListener("click", function () {
 });
 // ------------Smooth scrolling animation-----------
 const allinks = document.querySelectorAll("a:link");
+
 allinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -35,11 +36,39 @@ allinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
-    if (href !== "#" && href.startsWith("#")){ 
+    // scroll la alte linkuri
+    if (href !== "#" && href.startsWith("#")) {
       const sectionEL = document.querySelector(href);
-  }
+      sectionEL.scrollIntoView({ behavior: "smooth" });
+    }
+    // close mobile navigation
+    if (link.classList.contains("main-nav-link"))
+      headerEL.classList.toggle("nav-open");
+  });
 });
 
+// =======Sticky nav==========
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting == false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+obs.observe(sectionHeroEl);
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
