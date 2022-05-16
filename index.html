@@ -88,11 +88,21 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
+            
+            
+            <!-- truc ca sa mearga webp si pe versiuni mai vechi de ios si mozilla -->
+            <picture>
+              <source srcset="img/hero.webp"
+              type="image/webp"/>
+              <source srcset="img/hero-min.png"
+              type="image/png"/>
+
+              <img
+              src="img/hero-min.webp"
               alt="women enjoying food,meals and food container"
               class="hero-img"
-            />
+              />
+            </picture>
           </div>
         </div>
       </section>
