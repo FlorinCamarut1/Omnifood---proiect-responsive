@@ -38,6 +38,7 @@ SPACING SYSTEM (PX): 2/4/8/12/16/24/32/48/64/80/96/128.
 html {
   /* procentajul pentru user browse */
   font-size: 62.5%;
+
   /* de exemplu daca vrem 10px 1 rem ,setam global in html, font-size: 10/16=0.625*100%=62.5% 
   -----extrem de important cand vrem sa aplicam @media queries mai tarziu pentru optimizare pe deviceuri */
   /* scroll-behavior: smooth; -----nu merge in safari pe iphone in general pentru ca da doar in chrome */
